@@ -1,0 +1,5 @@
+.gitattributes text
+*.html text
+*.md text
+*.css text
+*.js text
