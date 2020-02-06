@@ -1,0 +1,17 @@
+---
+layout: post
+title: Apache mod_wsgi with Trac and Bazaar
+date: '2009-07-28T12:34:00.004+10:00'
+author: Jamie Teh
+tags:
+- Apache
+- system administration
+- Bazaar
+- mod_wsgi
+- Trac
+modified_time: '2009-07-28T13:21:36.174+10:00'
+blogger_id: tag:blogger.com,1999:blog-5419412965543098028.post-1142370608594391035
+permalink: /2009/07/apache-modwsgi-with-trac-and-bazaar.html
+---
+
+I recently installed the <a href="http://www.modwsgi.org/">mod_wsgi</a> Apache module and configured Trac and Bazaar to use it. Here are some notes that others might find useful.<br /><br /><h4>Trac</h4><br />The mod_wsgi documentation on <a href="http://code.google.com/p/modwsgi/wiki/IntegrationWithTrac">Integration with Trac</a> provides information about many different configurations, as it should. However, much of the document discusses setting environment variables from within the script using os.environ. As the document notes, this is problematic if you want to run multiple instances of Trac within the same process. I think using SetEnv from within the Apache config is a far better approach (which is discussed towards the end of the document). This also allows you to use the same, minimal wsgi script for many instances of Trac.<br /><br />The document also demonstrates setting the PYTHON_EGG_CACHE environment variable via os.environ. This can only be set once per process anyway. However, if you're running in embedded mode, a more elegant way to do it is to use the <a href="http://code.google.com/p/modwsgi/wiki/ConfigurationDirectives#WSGIPythonEggs">WSGIPythonEggs configuration directive</a>.<br /><br /><h4>Bazaar</h4><br />The <a href="http://doc.bazaar-vcs.org/latest/en/user-guide/index.html#serving-bazaar-with-fastcgi">Bazaar User Guide</a> describes configuring the Bazaar http smart server with fastcgi and mod_python, but not mod_wsgi. This <a href="https://lists.ubuntu.com/archives/bazaar/2008q3/047120.html">mailing list post</a> describes configuring it with mod_wsgi. As above, I prefer to set the environment in the Apache configuration so I can use the same script for multiple configurations.<br /><br />My script is as follows:<br /><pre>from bzrlib.transport.http import wsgi<br /><br />def application(environ, start_response):<br />    return wsgi.make_app(<br />        root=environ["bzr_wsgi.root"],<br />        prefix=environ["bzr_wsgi.prefix"],<br />        readonly=True,<br />        enable_logging=False<br />    )(environ, start_response)</pre><br /><br />With this script, you can specify the root and prefix passed to the bzr smart server wsgi application using SetEnv in the Apache configuration.<br /><br />Here is an example configuration snippet making an entire tree useable with the bzr smart server. The prefix is set to "/", which means that the root (/) of the http host corresponds to /srv/bzr in the filesystem.<br /><pre>    WSGIScriptAliasMatch ^.*/\.bzr/smart$ /usr/local/share/wsgi/bzr.wsgi<br />    &lt;Location /&gt;<br />        WSGIApplicationGroup %{GLOBAL}<br />        SetEnv bzr_wsgi.root /srv/bzr<br />        SetEnv bzr_wsgi.prefix /<br />    &lt;/Location&gt;</pre><br />If you have branches in shared bazaar repositories and are experiencing errors related to "server jail" or "jail break" when you try to access them, you are probably experiencing <a href="https://bugs.launchpad.net/bzr/+bug/348308">bug #348308</a>. See the bug report for a temporary work around.

@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'Inexcusable Inaccessibility: APC Goalball Coverage'
+date: '2011-11-15T22:37:00.005+10:00'
+author: Jamie Teh
+tags:
+- Adobe Flash
+- rants
+- goalball
+- accessibility
+- web
+modified_time: '2011-11-16T09:14:51.188+10:00'
+blogger_id: tag:blogger.com,1999:blog-5419412965543098028.post-2952848923253560231
+permalink: /2011/11/inexcusable-inaccessibility-apc.html
+---
+
+Australia are currently hosting the IBSA Africa Oceania Goalball Regional Championships, where both men's and women's teams are playing to qualify for the London 2012 Paralympic Games. Go Australia! :) They've provided a <a href="http://www.paralympic.org.au/games-amp-events/live-stream-goalball-regional-championships/live-stream-goalball-regional-champions">live internet stream</a> with commentary, which is fantastic. Unfortunately, the Flash video player they're using is completely inaccessible to screen reader users. (Technically, it uses windowless Flash, which is not accessible.) Worse, the page doesn't even play the video automatically when it opens, which means you have no choice but to use the video player controls. Allow me to emphasise the absolute, inexcusable absurdity of this situation: they are broadcasting a sport for the blind, but the broadcast is inaccessible to blind people.<br /><br />Digging through their code, it's not too hard to work around this. I was able to come up with <a href="http://cdn.livestream.com/embed/australianparalympiccommittee?layout=4&amp;height=340&amp;width=560&amp;autoplay=true">a link which enables auto-play</a>, so at least it begins playing automatically, avoiding the need to use the video player controls. However, the average user would not have been able to do this themselves.<br /><br />Ideally, everything should be accessible to all users. Sometimes, for whatever reasons (valid or not), this isn't possible. When it isn't, at least consider your target audience. If, for example, a large number of them are probably going to be blind, it might just make sense to implement and test accessibility for screen reader users. The APC are using an external service to provide the stream. Regardless, they should have tested and resolved the problem somehow or, at the very least, openly provided a work around such as the one I gave above.<br /><br />It's worth noting that Adobe <a href="http://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSd60f23110762d6b883b18f10cb1fe1af6-7c47a.html#WSd">clearly document that windowless (transparent or opaque) Flash is inaccessible</a>.

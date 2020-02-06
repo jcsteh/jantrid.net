@@ -1,0 +1,28 @@
+---
+layout: post
+title: Making PennyTel Accessible with Greasemonkey
+date: '2011-08-09T19:03:00.005+10:00'
+author: Jamie Teh
+tags:
+- Firefox
+- programming
+- accessibility
+- Greasemonkey
+- PennyTel
+- web
+modified_time: '2011-08-09T20:55:33.964+10:00'
+blogger_id: tag:blogger.com,1999:blog-5419412965543098028.post-3010603987266311
+permalink: /2011/08/making-pennytel-accessible-with.html
+---
+
+<a href="http://www.pennytel.com/">PennyTel</a> is an incredibly cheap VoIP provider serving Australia (among other countries) which I have been using for several years. For the most part, I am fairly happy with them, especially the price. Unfortunately, their customer portal has many accessibility problems, and despite a polite request from me quite some time ago, nothing has been done to rectify this.
+<br />
+<br />The biggest issue is that there are many buttons on the site which are presented using clickable graphics, but they have been marked with @alt="", indicating that the graphics are for visual presentation/layout only and suggesting to screen readers that they shouldn't be presented to the user. Obviously, this is very wrong, since these graphics are buttons which the user might wish to activate. It's bad enough that no text alternative is provided, but specifying empty text is extremely incorrect. With the current version of NVDA, this issue makes the portal practically unusable.
+<br />
+<br />It recently occurred to me that it might be possible to hack around this with <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a>. In short, Greasemonkey is a Firefox add-on which allows you to "customize the way a web page displays or behaves, by using small bits of JavaScript".
+<br />
+<br />This turned out to be a great success. I now have a Greasemonkey script that not only gives friendly labels to many graphic buttons, but also injects ARIA to transform these graphics into buttons. In addition, there are parts of the portal which use graphics to indicate which option has been selected and the script turns these into radio buttons using ARIA. There is a navigation bar where the items are only clickable text, which the script changes into links for quicker navigation using ARIA. Finally, @alt="" is removed from all other clickable graphics which the script doesn't yet know about, which at least allows screen readers to present the graphic using their own algorithms to determine a label. Once the script is installed, this all happens transparently without any special action.
+<br />
+<br />This took me a few hours, though this was mostly because I had never used Greasemonkey and only had a very basic knowledge of JavaScript before. Aside from the fact that PennyTel is now quite usable for me, this is also an exciting demonstration of how accessibility improvements for a site can be "scripted" within the browser like this, independent of any particular screen reader.
+<br />
+<br />If you happen to have a PennyTel account and would find this useful yourself, you can <a href="http://www.jantrid.net/gmScripts/PennyTelA11yFixes.user.js">grab the script</a>. I'm sure there are more things I can improve, but this is sufficient to make the site quite usable.

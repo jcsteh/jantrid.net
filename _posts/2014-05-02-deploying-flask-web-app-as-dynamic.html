@@ -1,0 +1,17 @@
+---
+layout: post
+title: Deploying a Flask Web App as a Dynamic uWSGI App with Multiple Threads
+date: '2014-05-02T21:41:00.001+10:00'
+author: Jamie Teh
+tags:
+- Python
+- Flask
+- system administration
+- uWSGI
+- web
+modified_time: '2014-05-02T21:43:29.824+10:00'
+blogger_id: tag:blogger.com,1999:blog-5419412965543098028.post-2090387879160046946
+permalink: /2014/05/deploying-flask-web-app-as-dynamic.html
+---
+
+<p>I recently had to deploy a <a href="http://flask.pocoo.org/">Flask</a> web app for <a href="http://www.hushlittlebabymusic.com/">Hush Little Baby Early Childhood Music Classes</a> (shameless plug) with uWSGI. (Sidenote: Flask + SQLAlchemy + WTForms = awesome.) I ran into an extremely exasperating issue which I thought I'd document here in case anyone else runs into it.</p><p>Despite the fact that <a href="http://uwsgi-docs.readthedocs.org/en/latest/DynamicApps.html">uWSGI recommends that you run a separate instance for each app</a>, I prefer the dynamic app approach. While i certainly understand why separate instances are recommended, I think per-app instances waste resources, especially when they have a lot of common dependencies, including Python itself. I also set uWSGI to use multiple threads. Unfortunately, with Flask, this is a recipe for disaster.</p><p>As soon as Flask is imported by a dynamic app in this configuration, uWSGI instantly hangs and stops responding altogether. The only option is to kill -9. After hours of late night testing, debugging, muttering, cursing, finally going to bed and then more of the same the next day, I finally thought to try disabling threads in uWSGI. And it… worked.</p><p>Still, I needed a little bit of concurrency, didn't want to use multiple processes and didn't want to abandon the dynamic app approach. It occurred to me that if it worked fine with per-app instances (I didn't actually test this, but surely someone would have reported such a problem) and a single thread, then it should work if flask were imported before the threading stuff happened. This led me to discover the <a href="http://uwsgi-docs.readthedocs.org/en/latest/Options.html#shared-import-shared-pyimport-shared-py-import-shared-python-import">shared-pyimport option</a>. Sure enough, if I specify flask as a shared import (though a non-shared miport might work just as well), it works even with threads > 1. Horray!</p><p>I still don't know if this is a bug in Flask, a Flask dependency or uWSGI or whether it's just a configuration that can never work for reasons I don't understand. I don't really have time to debug it, so I'm just happy I found a solution.</p>

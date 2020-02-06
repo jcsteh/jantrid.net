@@ -1,0 +1,14 @@
+---
+layout: post
+title: Getting a Python Traceback without an Exception
+date: '2009-02-13T21:30:00.002+10:00'
+author: Jamie Teh
+tags:
+- programming
+- Python
+modified_time: '2009-02-13T21:39:02.011+10:00'
+blogger_id: tag:blogger.com,1999:blog-5419412965543098028.post-8708254642991272946
+permalink: /2009/02/getting-python-traceback-without.html
+---
+
+Any Python programmer will be familiar with the stack traceback associated with an exception; most will be particularly familiar with a traceback being displayed for an unhandled exception. This is extremely useful in finding and resolving the issue in the code. However, for a long time now, I've often thought that it would be extremely useful to be able to get a stack traceback at any arbitrary point without needing an exception, which would aid in determining what code path was taken to get to a particular function call. I knew this was possible - Python does allow you to get at the stack frames - but I thought I might have to do a bit of work to obtain a nice traceback. Finally, figuring someone else must have wanted this, I did a bit of Googling and turned up <a href="http://www.doughellmann.com/PyMOTW/traceback/">this article</a>. I somehow missed print_stack(), format_stack() and extract_stack() in the traceback module. :) Sooo easy! :)
