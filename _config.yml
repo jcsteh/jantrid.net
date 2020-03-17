@@ -1,7 +1,7 @@
 title: "Jantrid"
 author: "James Teh"
 description: "The musings and ramblings of Jamie Teh."
-permalink: /:title/
+permalink: /:year/:month/:day/:title/
 lang: "en"
 date_format: "%d %B %Y"
 
@@ -23,8 +23,8 @@ minimal: false               # minima-inspired style without box-shadows
 # Menu
 
 navigation:
-#  - {file: "index.html", icon: home}
-#  - {file: "README.md", icon: address-card}
+  - {file: "index.html", icon: home}
+  - {file: "music.md", title: "Music"}
 
 external:                    # see http://fontawesome.com/icons
 #  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
