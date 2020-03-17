@@ -3,20 +3,22 @@ layout: page
 title: Music
 ---
 
-Here is a collection of music I've recorded, some solo and some with others. I hope you enjoy!
+Here is a collection of music I've recorded, some solo and some with others.
+I hope you enjoy!
 
 ## Nth Degree
 A progressive rock duo with Michael Sheppard.
+Most lead vocals by Michael Sheppard.
 
-- [Fallen](https://files.jantrid.net/music/NthDegree/Fallen.mp3): Featuring Jack Murphy
+- [Fallen](https://files.jantrid.net/music/NthDegree/Fallen.mp3): Featuring Jack Murphy on guitar.
 - [Everything is Fine](https://files.jantrid.net/music/NthDegree/EverythingIsFine.mp3)
 - [Out of Love](https://files.jantrid.net/music/NthDegree/OutOfLove.mp3)
-- [Breaking Inside](https://files.jantrid.net/music/NthDegree/BreakingInside.mp3): Featuring Jennifer Teh
+- [Breaking Inside](https://files.jantrid.net/music/NthDegree/BreakingInside.mp3): Featuring vocals by Jennifer Teh.
 - [Watchers](https://files.jantrid.net/music/NthDegree/Watchers.mp3)
-- [Temptation](https://files.jantrid.net/music/NthDegree/Temptation.mp3)
-- [Cruel to be Kind](https://files.jantrid.net/music/NthDegree/CruelToBeKind.mp3)
+- [Temptation](https://files.jantrid.net/music/NthDegree/Temptation.mp3): Featuring Jack Murphy on guitar.
+- [Cruel to be Kind](https://files.jantrid.net/music/NthDegree/CruelToBeKind.mp3): Featuring vocals by Jennifer Teh.
 - [Never be the Same](https://files.jantrid.net/music/NthDegree/NeverBeTheSame.mp3)
-- [Losing touch](https://files.jantrid.net/music/NthDegree/LosingTouch.mp3)
+- [Losing touch](https://files.jantrid.net/music/NthDegree/LosingTouch.mp3): Featuring Michael Cudmore on guitar.
 
 ## Solo
 - [Torch](https://files.jantrid.net/music/Torch.mp3): 3 minutes 30 of instrumental symphonic electronica meets metal meets cinematic meets… other things.
