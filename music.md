@@ -28,4 +28,5 @@ Most lead vocals by Michael Sheppard.
 ## Kids
 Some stuff I've recorded with my boys.
 
-- [Pop Jam](https://files.jantrid.net/music/PopJam.mp3): A little piece I threw together with 6 year old Josh. Josh on vocals and piano.
+- [For You to Smile to](https://files.jantrid.net/music/ForYouToSmileTo.mp3): I wanted to try to write a modern pop song... and my wife was away one Saturday, so I wanted to do some music with the kids. Put all that together with a few hours of work and you get this. Featuring vocals from 5 year old Leo, 8 year old Josh and me.
+- [Pop Jam](https://files.jantrid.net/music/PopJam.mp3): A little improv piece I threw together with 6 year old Josh. Josh on vocals and piano.
