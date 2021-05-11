@@ -22,6 +22,7 @@ Most lead vocals by Michael Sheppard.
 - [Losing touch](https://files.jantrid.net/music/NthDegree/LosingTouch.mp3): Featuring Michael Cudmore on guitar.
 
 ## Solo
+- [Some Dreams](https://files.jantrid.net/music/SomeDreams.mp3): Piano and vocal with a little strings intro.
 - [Torch](https://files.jantrid.net/music/Torch.mp3): 3 minutes 30 of instrumental symphonic electronica meets metal meets cinematic meets… other things.
 - [I Turn to You](https://files.jantrid.net/music/ITurnToYou.mp3): A piano and vocal ballad.
 
