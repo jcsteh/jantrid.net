@@ -8,8 +8,9 @@ I hope you enjoy!
 
 ## Nth Degree
 A progressive rock duo with Michael Sheppard.
-Most lead vocals by Michael Sheppard.
 
+- [Limbo](https://files.jantrid.net/music/NthDegree/Limbo.mp3)
+- [Slow Down](https://files.jantrid.net/music/NthDegree/SlowDown.mp3)
 - [Roses of Loss](https://files.jantrid.net/music/NthDegree/RosesOfLoss.mp3): Strings and vocal ballad.
 - [Fallen](https://files.jantrid.net/music/NthDegree/Fallen.mp3): Featuring Jack Murphy on guitar.
 - [Everything is Fine](https://files.jantrid.net/music/NthDegree/EverythingIsFine.mp3)
