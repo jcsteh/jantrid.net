@@ -9,6 +9,7 @@ I hope you enjoy!
 ## Nth Degree
 A progressive rock duo with Michael Sheppard.
 
+- [Balcony](https://files.jantrid.net/music/NthDegree/Balcony.mp3)
 - [Limbo](https://files.jantrid.net/music/NthDegree/Limbo.mp3)
 - [Slow Down](https://files.jantrid.net/music/NthDegree/SlowDown.mp3)
 - [Roses of Loss](https://files.jantrid.net/music/NthDegree/RosesOfLoss.mp3): Strings and vocal ballad.
