@@ -4,6 +4,9 @@ description: "The musings and ramblings of Jamie Teh."
 permalink: /:year/:month/:day/:title/
 lang: "en"
 date_format: "%d %B %Y"
+# I'm UTC+10:00, but GitHub is in some earlier time zone. Ensure new posts get
+# published.
+future: true
 
 # Layout
 
