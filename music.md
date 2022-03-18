@@ -9,6 +9,7 @@ I hope you enjoy!
 ## Nth Degree
 A progressive rock duo with Michael Sheppard.
 
+- [Change My Mind](https://files.jantrid.net/music/NthDegree/ChangeMyMind.mp3)
 - [Balcony](https://files.jantrid.net/music/NthDegree/Balcony.mp3)
 - [Limbo](https://files.jantrid.net/music/NthDegree/Limbo.mp3)
 - [Slow Down](https://files.jantrid.net/music/NthDegree/SlowDown.mp3)
