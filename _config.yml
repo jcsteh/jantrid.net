@@ -31,8 +31,9 @@ navigation:
 
 external:                    # see http://fontawesome.com/icons
 #  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-#  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
   - {title: Subscribe, icon: rss, url: "/feeds/posts/default"}
+  - {title: Mastodon, icon: mastodon, url: "https://aus.social/@jcsteh"}
+  - {title: Github, icon: github, url: "https://github.com/jcsteh"}
 
 comments:
 #  disqus: ""                # see https://disqus.com/
