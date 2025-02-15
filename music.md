@@ -6,14 +6,13 @@ title: Music
 Here is a collection of music I've recorded, some solo and some with others.
 I hope you enjoy!
 
-## Nth Degree
-A progressive rock duo with Michael Sheppard.
+## Electronight Alchemy
+An alternative duo with Michael Sheppard.
+You can find us on [Spotify](https://open.spotify.com/artist/6VVNGUiM1nGLoSFI3ao0B8), [Apple Music](https://music.apple.com/us/artist/electronight-alchemy/1698505981), [YouTube](https://www.youtube.com/channel/UCErninmmVQqfZ4_qKMXHwig) and other streaming services.
+Below are some older tracks that aren't available on streaming services.
 
-- [Change My Mind](https://files.jantrid.net/music/NthDegree/ChangeMyMind.mp3)
 - [Balcony](https://files.jantrid.net/music/NthDegree/Balcony.mp3)
 - [Limbo](https://files.jantrid.net/music/NthDegree/Limbo.mp3)
-- [Slow Down](https://files.jantrid.net/music/NthDegree/SlowDown.mp3)
-- [Roses of Loss](https://files.jantrid.net/music/NthDegree/RosesOfLoss.mp3): Strings and vocal ballad.
 - [Fallen](https://files.jantrid.net/music/NthDegree/Fallen.mp3): Featuring Jack Murphy on guitar.
 - [Everything is Fine](https://files.jantrid.net/music/NthDegree/EverythingIsFine.mp3)
 - [Out of Love](https://files.jantrid.net/music/NthDegree/OutOfLove.mp3)
@@ -25,7 +24,6 @@ A progressive rock duo with Michael Sheppard.
 - [Losing touch](https://files.jantrid.net/music/NthDegree/LosingTouch.mp3): Featuring Michael Cudmore on guitar.
 
 ## Solo
-- [Some Dreams](https://files.jantrid.net/music/SomeDreams.mp3): Piano and vocal with a little strings intro.
 - [Torch](https://files.jantrid.net/music/Torch.mp3): 3 minutes 30 of instrumental symphonic electronica meets metal meets cinematic meets… other things.
 - [I Turn to You](https://files.jantrid.net/music/ITurnToYou.mp3): A piano and vocal ballad.
 
