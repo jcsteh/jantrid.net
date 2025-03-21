@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Why UI Automation is Insufficient as an Accessibiliy API for the Web'
+title: 'Why UI Automation is Insufficient as an Accessibility API for the Web'
 tags:
 - accessibility
 - web
