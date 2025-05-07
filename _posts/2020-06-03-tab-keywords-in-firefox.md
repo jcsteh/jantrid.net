@@ -18,7 +18,7 @@ Inspired by these two features, I started to wonder: what if you could have tab 
 If you only have 8 tabs you use a lot, you can switch to the first 8 tabs with control+1 through control+8.
 If you have more than that, you can search them with the address bar, but that gets messy if you have multiple pages with similar titles or a page title doesn't contain keywords that are quick to search.
 For example, if you have both Facebook Messenger and Twitter Direct Messages open, you can't just type "% mes" because that will match both.
-If you're on bug triage duty and have a bug list open, the list might not have a uesful title.
+If you're on bug triage duty and have a bug list open, the list might not have a useful title.
 Wouldn't it be nice to just type "tm" to switch to Twitter Direct Messages or "fm" to switch to Facebook Messenger?
 
 ## Implementation
