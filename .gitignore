@@ -2,6 +2,8 @@
 .bundle
 .jekyll-cache
 .sass-cache
-Gemfile.lock
+.hugo_build.lock
 _site
+public
+resources
 *.gem

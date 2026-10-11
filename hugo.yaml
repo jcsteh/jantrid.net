@@ -1,0 +1,54 @@
+baseURL: "https://www.jantrid.net/"
+title: "Jantrid"
+locale: "en-AU"
+timeZone: "Australia/Brisbane"
+enableRobotsTXT: true
+
+params:
+  author: "James Teh"
+  description: "The musings and ramblings of Jamie Teh."
+
+pagination:
+  pagerSize: 10
+  path: page
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+    - name: Music
+      pageRef: /music
+      weight: 20
+  social:
+    - name: Subscribe
+      url: /feeds/posts/default/index.xml
+      weight: 10
+    - name: Mastodon
+      url: https://aus.social/@jcsteh
+      weight: 20
+    - name: GitHub
+      url: https://github.com/jcsteh
+      weight: 30
+
+frontmatter:
+  date:
+    - date
+    - :filename
+    - :default
+
+security:
+  allowContent:
+    - ^text/html$
+    - ^text/markdown$
+
+outputFormats:
+  RSS:
+    baseName: index
+    mediaType: application/rss+xml
+    path: feeds/posts/default
+
+outputs:
+  home:
+    - HTML
+    - RSS
